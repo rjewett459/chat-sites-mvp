@@ -107,7 +107,7 @@ git push origin main
 
 ## 👥 Contributors
 
-- **Rick Jewett** - Co-Founder, AI Systems & Innovator
+- **Rick Jewett** - Co-Founder, AI Systems Development & Innovator
 - **Jimmy Pavlatos** - Co-Founder, Marketing & MicroSaaS Development
 - **ChatSites Team** - AI & Web Development
 
