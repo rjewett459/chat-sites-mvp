@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ChatSites MVP
 
-## Getting Started
+## 🚀 Overview
 
-First, run the development server:
+ChatSites is an AI-powered chat assistant platform designed to enhance user engagement and streamline business communication. This MVP (Minimum Viable Product) serves as a foundation for interactive, voice-first, and text-based AI assistants integrated seamlessly into websites.
+
+## 📂 Project Structure
+
+```
+chat-sites-mvp/
+│── app/                    # Application-level logic (if using Next.js App Router)
+│── components/             # Reusable React components
+│── public/                 # Static assets (icons, images, etc.)
+│── styles/                 # Global styles (Tailwind CSS, custom styles)
+│── pages/                  # Next.js page components (if using Pages Router)
+│── .gitignore              # Git ignore file
+│── next.config.ts          # Next.js configuration
+│── tailwind.config.ts      # Tailwind CSS configuration
+│── package.json            # Project dependencies and scripts
+│── tsconfig.json           # TypeScript configuration
+│── README.md               # Project documentation
+```
+
+## 🛠️ Tech Stack
+
+- **Next.js** - React-based framework for SSR and SSG
+- **TypeScript** - Static typing for improved code reliability
+- **Tailwind CSS** - Utility-first CSS framework for styling
+- **React Hooks** - State and effect management
+- **Vercel** - Deployment and hosting
+
+## 🔧 Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/rjewett459/chat-sites-mvp.git
+cd chat-sites-mvp
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` in your browser to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4️⃣ Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## ✨ Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Draggable Chat Bubble & Interface**: Interactive chat assistant that can be moved across the screen.
+- **AI-Powered Conversations**: Integrated chatbot functionality.
+- **Toggle Switch for Text & Voice**: Users can switch between text-based and voice-enabled interaction.
+- **Dark Mode Support**: The application adapts to dark/light modes.
+- **Mobile-First Design**: Fully responsive UI for various devices.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Ensure you have a `.env.local` file for storing API keys and other secrets:
 
-## Deploy on Vercel
+```bash
+NEXT_PUBLIC_API_URL=https://your-api-endpoint.com
+NEXT_PUBLIC_CHATBOT_ID=your-chatbot-id
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Deploy on **Vercel**
+
+```bash
+vercel
+```
+
+Or manually via Vercel dashboard by connecting the GitHub repository.
+
+## 🛠️ Troubleshooting
+
+- **Tailwind Not Working?** Ensure Tailwind directives are included in `styles/globals.css`:
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+- **GitHub Repository Not Updating?**
+
+```bash
+git pull origin main
+git add .
+git commit -m "Updated changes"
+git push origin main
+```
+
+## 👥 Contributors
+
+- **Rick Jewett** - Co-Founder, AI Systems & Innovator
+- **Jimmy Pavlatos** - Co-Founder, Marketing & MicroSaaS Development
+- **ChatSites Team** - AI & Web Development
+
+## 📜 License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+## 📞 Contact
+
+For support, reach out via:
+
+- **Website**: [ChatSites.ai](https://chatsites.ai/)
+- **Email**: [info@chatsites.ai](mailto\:info@chatsites.ai)
+- **GitHub Issues**: [Report a Bug](https://github.com/rjewett459/chat-sites-mvp/issues)
+
